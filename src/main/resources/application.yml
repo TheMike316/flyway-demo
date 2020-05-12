@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: postgres
+    password: password
+
+  jpa:
+    properties:
+      hibernate:
+        default-schema: todo_service
+        show-sql: true

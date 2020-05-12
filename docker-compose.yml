@@ -1,0 +1,16 @@
+version: '3'
+
+# for local development
+services:
+  db:
+    image: postgres:11-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+      - PGDATA=/var/lib/postgresql/data/pgdata
+#    volumes:
+#      - data
+
+volumes:
+  data:
